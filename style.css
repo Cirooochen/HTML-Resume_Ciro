@@ -5,7 +5,7 @@
 }
 
 body {
-  padding: 2rem 2rem;
+  padding: 2rem;
   color: #fef1e8;
   font-family: "DM Sans", sans-serif;
   line-height: 1.5;
@@ -70,10 +70,12 @@ img {
 }
 
 .navbar {
-  /*position: fixed;*/
+  width: 100vw;
+  position: fixed;
   display: flex;
   justify-content: space-between;
   align-items: top;
+  background-color: #151515;
 }
 .nav-links {
   list-style: none;
@@ -82,15 +84,6 @@ img {
   align-items: top;
   gap: 2rem;
 }
-.section_hero {
-  max-width: 400px;
-  overflow: none;
-}
-.work_content {
-  max-width: 800px;
-  overflow: none;
-}
-
 .two_column {
   display: flex;
   gap: 5rem;
@@ -98,6 +91,28 @@ img {
   align-items: start;
   margin: 1rem;
 }
+.leftColumn {
+  flex: 1;
+  max-width: 800px;
+  min-width: 200px;
+  justify-content: center;
+  overflow: none;
+}
+.profile-pic {
+  max-width: 150px;
+}
+.profile-pic img {
+  width: 100%;
+  aspect-ratio: 1/1;
+  object-fit: cover;
+  border-radius: 300px;
+}
+.rightColumn {
+  flex: 2;
+
+  /* overflow: none; */
+}
+
 .gallery {
   display: grid;
   gap: 1rem;
